@@ -1,0 +1,199 @@
+body {
+    margin:0;
+    background: rgb(14, 14, 13);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+   svg.rose {
+     display: block;
+     width:600px;
+     padding-top: 10em;
+     margin-top: -100px;
+   }
+   
+   h1 {
+    
+     
+     
+       color: #afd4ef; /* Color del texto */
+       font-size: 36px;
+       margin-top: 100px;
+   
+   
+   }
+   
+   @keyframes rose-animation {
+     50% {
+       transform: scale(1);
+       opacity: 1;
+     }
+     100%{
+          transform: scale(1);
+       opacity: 1;
+     }
+   }
+   
+   .cls-3,.cls-4,.cls-5,.cls-6,.cls-7,.cls-8,.cls-9,.cls-10,.cls-11,.cls-12,.cls-13,.cls-14,.cls-15,.cls-16,.cls-17{
+     transform: scale(0);
+     transform-origin: center center;
+     opacity: 0;
+      animation: rose-animation 2s ease infinite 0.1s alternate;
+   }
+   .cls-6,.cls-7,.cls-8,.cls-9,.cls-10,.cls-11,.cls-12,.cls-13,.cls-14,.cls-15,.cls-16,.cls-17{
+     transform: scale(0);
+     transform-origin: center center;
+     opacity: 0;
+      animation: rose-animation 2s ease infinite 0.34s alternate;
+   }
+   .cls-9,.cls-10,.cls-11,.cls-12,.cls-13,.cls-14,.cls-15,.cls-16,.cls-17{
+     transform: scale(0);
+     transform-origin: center center;
+     opacity: 0;
+      animation: rose-animation 2s ease infinite 0.5s alternate;
+   }
+   cls-12,.cls-13,.cls-14,.cls-15,.cls-16,.cls-17{
+     transform: scale(0);
+     transform-origin: center center;
+     opacity: 0;
+      animation: rose-animation 2s ease infinite 0.2s alternate;
+   }
+   .boingInUp {
+     -webkit-animation-name: boingInUp;
+             animation-name: boingInUp;
+   }
+   @-webkit-keyframes boingInUp {
+     0% {
+       opacity: 0;
+       -webkit-transform-origin: 50% 0%;
+               transform-origin: 50% 0%;
+       -webkit-transform: perspective(800px) rotateX(-90deg);
+               transform: perspective(800px) rotateX(-90deg);
+     }
+     
+     50% {
+       opacity: 1;
+       -webkit-transform-origin: 50% 0%;
+               transform-origin: 50% 0%;
+       -webkit-transform: perspective(800px) rotateX(50deg);
+               transform: perspective(800px) rotateX(50deg);
+     }
+   
+     100% {
+       opacity: 1;
+       -webkit-transform-origin: 50% 0%;
+               transform-origin: 50% 0%;
+       -webkit-transform: perspective(800px) rotateX(0deg);
+               transform: perspective(800px) rotateX(0deg);
+     }
+   }
+   #hojas{
+     animation: boingInUp 2s ease infinite alternate  ;
+   }
+   @keyframes boingInUp {
+     0% {
+       opacity: 0;
+       -webkit-transform-origin: 50% 0%;
+               transform-origin: 50% 0%;
+       -webkit-transform: perspective(800px) rotateX(-90deg);
+               transform: perspective(800px) rotateX(-90deg);
+     }
+     
+     50% {
+       opacity: 1;
+       -webkit-transform-origin: 50% 0%;
+               transform-origin: 50% 0%;
+       -webkit-transform: perspective(800px) rotateX(50deg);
+               transform: perspective(800px) rotateX(50deg);
+     }
+   
+     100% {
+       opacity: 1;
+       -webkit-transform-origin: 50% 0%;
+               transform-origin: 50% 0%;
+       -webkit-transform: perspective(800px) rotateX(0deg);
+               transform: perspective(800px) rotateX(0deg);
+     }
+   }
+   .puffIn {
+     -webkit-animation-name: puffIn;
+             animation-name: puffIn;
+   }
+   @-webkit-keyframes puffIn {
+     0% {
+       opacity: 0;
+       -webkit-transform-origin: 50% 50%;
+               transform-origin: 50% 50%;
+       -webkit-transform: scale(2,2);
+               transform: scale(2,2);
+       -webkit-filter: blur(2px);
+               filter: blur(2px);
+     }
+   
+     100% {
+       opacity: 1;
+       -webkit-transform-origin: 50% 50%;
+               transform-origin: 50% 50%;
+       -webkit-transform: scale(1,1);
+               transform: scale(1,1);
+       -webkit-filter: blur(0px);
+               filter: blur(0px);
+     }
+   }
+   @keyframes puffIn {
+     0% {
+       opacity: 0;
+       -webkit-transform-origin: 50% 50%;
+               transform-origin: 50% 50%;
+       -webkit-transform: scale(2,2);
+               transform: scale(2,2);
+       -webkit-filter: blur(2px);
+               filter: blur(2px);
+     }
+     50%{
+       opacity: 0.3;
+     }
+   
+     100% {
+       opacity: 1;
+       -webkit-transform-origin: 50% 50%;
+               transform-origin: 50% 50%;
+       -webkit-transform: scale(1,1);
+               transform: scale(1,1);
+       -webkit-filter: blur(0px);
+               filter: blur(0px);
+     }
+   }
+   #tallos{
+     animation: puffIn 2s infinite ease alternate;
+   }
+   #sombra_1{
+     visibility:hidden;
+   }
+
+   /* Estilo para el botón */
+.button button {
+        background-color: rgb(213, 219, 225); /* Fondo amarillo */
+        border: none; /* Sin bordes */
+        padding: 10px 50px; /* Ajusta el relleno según tu preferencia */
+        font-size: 20px; /* Tamaño de fuente */
+        cursor: pointer;
+        position: relative; /* Necesario para el resplandor */
+        border-radius: 20px; /* Esquinas redondeadas */
+        transition: background-color 0.3s ease-in-out; /* Transición suave para el color de fondo */
+      }
+      
+      /* Estilo para el enlace dentro del botón */
+      .button button a {
+        text-decoration: none; /* Elimina el subrayado del enlace */
+        color: inherit; /* Hereda el color del texto del botón */
+      }
+      
+      /* Efecto de resplandor al pasar el cursor sobre el botón */
+      .button button:hover {
+        background-color: rgb(141, 138, 171); /* Cambia el color de fondo al pasar el mouse a naranja */
+        box-shadow: 0 0 10px rgb(167, 152, 201), 0 0 20px rgb(146, 136, 190), 0 0 30px rgb(139, 122, 194); /* Efecto de resplandor amarillo */
+      }
+      
